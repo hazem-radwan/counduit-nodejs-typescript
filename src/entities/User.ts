@@ -8,6 +8,11 @@ export class User {
   username: string;
   @Column({
     type: "text",
+    nullable: false,
+  })
+  password: string;
+  @Column({
+    type: "text",
     nullable: true,
   })
   bio?: string;

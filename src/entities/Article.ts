@@ -17,7 +17,8 @@ export class Article {
   slug: string;
 
   @Column({
-    length: 40,
+    type: "text",
+    // length: 40,
   })
   title: string;
   @Column({
